@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-I have used Pentaho 8.3 EE so Splunk steps were already in. If you use EE please download Splunk step from the marketplace.
+I have used Pentaho 8.3 EE so Splunk steps were already in. If you use CE please download Splunk step from the marketplace.
 
 Latest steps from Neo4J here: https://github.com/knowbi/knowbi-pentaho-pdi-neo4j-output/releases/
 
