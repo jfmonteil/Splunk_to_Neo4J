@@ -55,17 +55,19 @@ Add the following or click the “Map Fields button” for easy Mapping interfac
 
 ![enter image description here](https://lh3.googleusercontent.com/saV-bwG2d44GsU5bw31kTU9ENkPQ-QTN66PiqF4RVCH6Qy19KIXQXyDk9TCZRL_aKB4MbF5XCA14Yg "mapping")
 
-Execute the transformation
+Execute the transformation.
 
-Log into your Neo4j environment
- ![enter image description here](https://lh3.googleusercontent.com/TlZvuqbspbA1hRVON0ngRqyykiodhU5_CCLgdp6ThgbA7Zhpm66qnDNcpW04E7iRhGZVxyQfyBUX4A "Relating IP and logins")
+Log into your Neo4j environment :
+
+![enter image description here](https://lh3.googleusercontent.com/TlZvuqbspbA1hRVON0ngRqyykiodhU5_CCLgdp6ThgbA7Zhpm66qnDNcpW04E7iRhGZVxyQfyBUX4A "Relating IP and logins")
 
 Repeat with 
-•	tr_read_splunk_sessions
-•	tr_read_splunk_useragent
+
+ 1. *tr_read_splunk_sessions*
+ 2. *tr_read_splunk_useragent*
 
 You should reach the following global graph in neo4J.
 
-![enter image description here](https://lh3.googleusercontent.com/GvA1e2Sg-SVw4whv6g_yT7PsIdu8F5Sx6WGICV3-_9VxjNz1R7t6e9Qsn-Em-5kkP8iB_mgMhD4qlQ "full neo4J")
+![enter image description here](https://lh3.googleusercontent.com/pnZCZUOSOvV7hcwM1BU2hXLrvUMeKX9jgggS1RqSRNchHlFF4h2IrN_wUkF7I47CUnLO-yGZBWIQ9g "full_neo4J")
 
 > Written with [StackEdit](https://stackedit.io/).
