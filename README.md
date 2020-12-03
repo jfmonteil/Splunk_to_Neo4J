@@ -11,11 +11,11 @@ Ktr's can be found here : https://github.com/jfmonteil/Splunk_to_Neo4J
 ## Demo
 *tr_load_tosplunk* loads *example.csv* in Splunk. (Check the index name and filepath)
 
-![enter image description here](https://lh3.googleusercontent.com/I0iplMufK_GxUlWVzVrl-I7q0tczsQ1kcIUYWzn-vBOiBrwdmrEsGPhhSwQYRHxZK0JjtYdYcGbejg "Loading Splunk")
+![loading to splunk](https://github.com/jfmonteil/Splunk_to_Neo4J/blob/master/tr_load_splunk.png?raw=true "Loading Splunk")
 
 *tr_read_splunk_login* reads Splunk freshly created index and creates both Nodes (IP and Logins) and Relations in between them.
 
-![enter image description here](https://lh3.googleusercontent.com/QP6KjjPNUngfPiYdl3RDiJ_EYV_fdWjB7Aad1TWccGHuwU0eNfGLnJaa7uFFlq8_Fl1l98P_GwDdkw "transformation")
+![loading logs](https://github.com/jfmonteil/Splunk_to_Neo4J/blob/master/tr_read_splunk_login.png?raw=true "transformation")
 
 Here is the detail of Splunk input step, fill in the Connection tab accordingly, type in the good splunk query to select useful fields from the good index then press get fields button, it will populate the fields tab automatically. 
 For the *src_ip* field change type form Integer to String
@@ -37,29 +37,29 @@ We will now define nodes, then relationships and then we are going to map incomi
 Create as many nodes as necessary
 For this step only IP and Logins are necessary, they are built with the same properties (note the Primary=Y for the id Property)
  
-![enter image description here](https://lh3.googleusercontent.com/vgirQcye81Zt1ZLwbmq59U3ebE-IJeZL8e6KCnYAPiVAS_Cq7axsfR15K0Ya_8IcT70f2YVz4qAlTQ "Defining nodes")
+![enter image description here](https://github.com/jfmonteil/Splunk_to_Neo4J/blob/master/neo4j_node.png?raw=true "Defining nodes")
 
 **Relations :**
 Specify source and target nodes and optionally properties. In our case we can add a “count” property 
- ![enter image description here](https://lh3.googleusercontent.com/rrG_BhuL0Let7YEtBH8sPp5NVvsjOO8gukNGKk_IqZGveH1U7To_6qIMRTFc0iyzTmT5nuDrGc_vDg "Relationships")
+ ![enter image description here](https://github.com/jfmonteil/Splunk_to_Neo4J/blob/master/neo4j_realtions.png?raw=true "Relationships")
 
 **Model check :**
 You can check your schema is OK by checking the graph
  
-![enter image description here](https://lh3.googleusercontent.com/veRBE8uz8XN2TsB2iqSyMjwh2vvk4v6D_M02pn7XJRno5_gGeisxP9iC5RINVtNIE-G8kX1pa8p8mQ "Graph Model summary")
+![enter image description here](https://github.com/jfmonteil/Splunk_to_Neo4J/blob/master/neo4j_Graph.png "Graph Model summary")
 
 **Mapping incoming fields :**
 Once your model designed click OK
  
 Add the following or click the “Map Fields button” for easy Mapping interface.
 
-![enter image description here](https://lh3.googleusercontent.com/saV-bwG2d44GsU5bw31kTU9ENkPQ-QTN66PiqF4RVCH6Qy19KIXQXyDk9TCZRL_aKB4MbF5XCA14Yg "mapping")
+![enter image description here](https://github.com/jfmonteil/Splunk_to_Neo4J/blob/master/neo4j_mapping.png "mapping")
 
 Execute the transformation.
 
 Log into your Neo4j environment :
 
-![enter image description here](https://lh3.googleusercontent.com/TlZvuqbspbA1hRVON0ngRqyykiodhU5_CCLgdp6ThgbA7Zhpm66qnDNcpW04E7iRhGZVxyQfyBUX4A "Relating IP and logins")
+![enter image description here](https://github.com/jfmonteil/Splunk_to_Neo4J/blob/master/neo4jgraph.png "Relating IP and logins")
 
 Repeat with 
 
@@ -68,6 +68,6 @@ Repeat with
 
 You should reach the following global graph in neo4J.
 
-![enter image description here](https://lh3.googleusercontent.com/pnZCZUOSOvV7hcwM1BU2hXLrvUMeKX9jgggS1RqSRNchHlFF4h2IrN_wUkF7I47CUnLO-yGZBWIQ9g "full_neo4J")
+![enter image description here](https://github.com/jfmonteil/Splunk_to_Neo4J/blob/master/neo4jfull.png "full_neo4J")
 
 > Written with [StackEdit](https://stackedit.io/).
