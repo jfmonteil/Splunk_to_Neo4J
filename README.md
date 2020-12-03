@@ -46,20 +46,20 @@ Specify source and target nodes and optionally properties. In our case we can ad
 **Model check :**
 You can check your schema is OK by checking the graph
  
-![enter image description here](https://github.com/jfmonteil/Splunk_to_Neo4J/blob/master/neo4j_Graph.png "Graph Model summary")
+![enter image description here](https://github.com/jfmonteil/Splunk_to_Neo4J/blob/master/neo4j_Graph.png?raw=true  "Graph Model summary")
 
 **Mapping incoming fields :**
 Once your model designed click OK
  
 Add the following or click the “Map Fields button” for easy Mapping interface.
 
-![enter image description here](https://github.com/jfmonteil/Splunk_to_Neo4J/blob/master/neo4j_mapping.png "mapping")
+![enter image description here](https://github.com/jfmonteil/Splunk_to_Neo4J/blob/master/neo4j_mapping.png?raw=true  "mapping")
 
 Execute the transformation.
 
 Log into your Neo4j environment :
 
-![enter image description here](https://github.com/jfmonteil/Splunk_to_Neo4J/blob/master/neo4jgraph.png "Relating IP and logins")
+![enter image description here](https://github.com/jfmonteil/Splunk_to_Neo4J/blob/master/neo4Jgraph.png?raw=true  "Relating IP and logins")
 
 Repeat with 
 
@@ -68,6 +68,6 @@ Repeat with
 
 You should reach the following global graph in neo4J.
 
-![enter image description here](https://github.com/jfmonteil/Splunk_to_Neo4J/blob/master/neo4jfull.png "full_neo4J")
+![enter image description here](https://github.com/jfmonteil/Splunk_to_Neo4J/blob/master/neo4jfull.png?raw=true  "full_neo4J")
 
 > Written with [StackEdit](https://stackedit.io/).
